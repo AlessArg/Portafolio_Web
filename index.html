@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--Metadatos-->
+  <meta charset="UTF-8" />
+  <meta name="author" content="Alessandro Aragon" />
+  <meta name="description" content="Portafolio Profesional de Alessandro Aragon" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Node.js, Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet" />
+  <!--Titulo-->
+  <title>Portafolio | Alessandro Aragon</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="Images/candado.jpg" />
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img class="navbar-image" src="/Images/navbar-image.png" width="65px" alt="Logo De Web" />
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre Mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img
+        class="hero-imagen-principal"
+        src="/Images/mifoto.jpg"
+        alt="Imagen De Desarrollo y Programacion"
+      />
+      <h1>Alessandro Aragón</h1>
+      <h2>Desarrollador Junior | Backend & Frontend</h2>
+    </div>
+    <div class="hero-inferior">
+      <img
+        class="image-hero-inferior img-fluid"
+        src="/Images/image-hero-inferior.png"
+        alt="Monitor Con Iconos De Programación, Web, Mensajes Y Busqueda"
+      />
+    </div>
+  </section>
+
+  <!-- Seccion Sobre Mi -->
+  <section id="sobre-mi" class="About-Me seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce Sobre Mí</h2>
+      <p class="seccion-texto">
+        Soy un desarrollador junior apasionado por el mundo de la técnología, con mucha emoción en demostrar
+        de lo que soy capaz. Utilizando tecnología Frontend como HTMl5/CSS y Framework Bootstrap puedo crear
+        entornos visuales agradables para el usuario y adaptables para cualquier dispositivo, dejando ver la
+        creatividad que hay en mí.
+        Del lado del Backend, puedo implementar mi lógica para resolver problemas de programación y resolver
+        estos de la mejor forma posible para que mis aplicaciones sean escalables, no implementen código ilegible
+        o redundante, utilizando tecnologías como Java SpringBoot o C# .NET Core MVC junto con Entity Framework y
+        su caracteristica LinQ puedo desarrollar todo el sistema lógico detrás de todo el entorno visual.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seccion Proyectos -->
+  <section id="proyectos" class="proyectos">
+    <div class="container text-center">
+      <h2 class="mb-4">Proyectos Destacados</h2>
+      <div class="row justify-content-center g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Prueba Técnica - Filtrado de Ventas</h5>
+              <p class="card-text flex-grow-1">
+                Aplicación ASP.NET Core MVC Razor Pages con filtros dinámicos, conexión a SQL Server y Frontend con Bootstrap.
+              </p>
+              <a
+                href="https://github.com/AlessArg/Prueba_Tecnica"
+                target="_blank"
+                class="btn btn-primary mt-auto"
+                >Ver código en GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sistema de Ventas - Proyecto Académico</h5>
+              <p class="card-text flex-grow-1">
+                CRUD con Java Spring Boot y MyQL, usando Thymeleaf y JPA/Hibernate.
+              </p>
+              <a
+                href="https://github.com/AlessArg/Sistema_Ventas_Springboot"
+                target="_blank"
+                class="btn btn-primary mt-auto"
+                >Ver código en GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Portafolio Web Profesional</h5>
+              <p class="card-text flex-grow-1">
+                Sitio web responsive con HTML, CSS y Bootstrap para la presentación y contacto de mi persona.
+              </p>
+              <a href="" target="_blank" class="btn btn-primary mt-auto"
+                >Ver portafolio</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Contacto -->
+   <div id="contacto" class="contacto seccion-oscura">
+    <section class="experience">
+      <div class="container text-center">
+        <h2 class="mb-4">Contacto</h2>
+        <p>
+          Correo:
+          <a href="">alearagon123789@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/marvin-alessandro-arag%C3%B3n-de-le%C3%B3n-b127ab226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWeio4%2FwSThy6gSqvdmUcmA%3D%3D"
+          target="_blank">Marvin Alessandro Aragon de León</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/AlessArg" target="_blank">AlessArg</a>
+        </p>
+        <p>
+          Teléfono:
+          5501-7977
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
